@@ -39,7 +39,7 @@ export const App = () => {
  
   useEffect(() => {
     const storedContacts = getDataFromLocalStorage('contacts');
-    if (storedContacts.length > 0 && contacts.length === 0) {
+    if (storedContacts.length > 0) {
       setContacts(storedContacts);
     }
   }, []);
